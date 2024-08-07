@@ -1,0 +1,300 @@
+/* Navbar section */
+*{
+ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Platypi", serif;
+}
+:root {
+    --bg-color: #080808;
+    --text-color: white;
+    --main-color:  rgb(48, 182, 194);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    height: 10%;
+}
+.navbar{
+    width: 100%;
+}
+.navbar .logo{
+    margin-left: -40px;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+.navbar .logo:hover{
+    transform: scale(0.9s);
+    font-weight: bold;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+span{
+    color: var(--main-color);
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 0.6rem;
+    font-weight: 500;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Platypi", serif;
+}
+.navbar a:hover{
+    text-shadow: 0.5px 0.2px var(--main-color);
+}
+.nav-item a:hover{
+    border-bottom: 5px solid var(--main-color);
+    background-color: whitesmoke;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border-radius: 10%;
+    }
+section{
+    height: 100vh;
+    padding: 8rem 9% 10rem;
+}
+
+/* home page section */
+/* .bgimage {
+    height:100vh;
+    background: url('./images/image15.webp');
+    background-size:cover;
+    position:relative;
+} */
+.bgimage {
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+.bgimage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/image151.png');
+    background-size: cover;
+    opacity: 0.7; /* Adjust this value to change the opacity */
+    z-index: -1;
+}
+.hero_title {
+    font-size: 5rem;
+    font-weight: bold;  
+}
+.hero_title_Name {
+    font-size: 6rem;
+    font-weight: bold;
+    color: rgb(7, 238, 199);
+}
+.hero_desc {
+    font-size: 3rem;  
+    font-weight: bold;
+    padding-top: 10px;
+}
+.hero-text {
+    color: white;
+    align-items: start;
+    padding-top: 80px;
+}
+.profile-photo{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    border-radius: 50%;
+    text-align: right;
+}
+.profile-photo img{
+    border-radius: 50%;
+}
+
+
+/* AboutMe Section */
+#home{
+    margin-bottom: -70px;
+}
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(./images/image7.jpg) center no-repeat;
+    background-size: cover;
+}
+.heading{
+    font-size: 6.3rem;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+.about-content {
+    text-align: left;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.001);
+    border: 1px solid rgba(24, 24, 24, 0.3);
+    border-radius: 5rem;
+    padding: 3rem;  
+}
+.about-content h2{
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+}
+.about-content p{
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+    max-width: 800px;
+    color: white;
+    font-family: "Platypi", serif;
+}
+
+
+/* Skills Section */
+#skills{
+    background: black;
+    background-size: cover;
+    color: white;
+}
+.main-section{
+    height: 100vh;
+}
+.heading-text{
+    font-size: 5rem;
+    text-align: center;
+}
+.heading{
+    margin-top: -40px;
+    text-align: center;
+}
+.width-50 {
+	float: left;
+	width: 50%;
+}
+.skill {
+	margin-top: 35px;
+	font-size: 2rem;
+}
+.skill span {
+	float: right;
+    font-size: 1.5rem;
+    color: white;
+}
+.skill div {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+	background: #e7e7e7;
+	border-radius: 10px;
+}
+.skill div span {
+	background: #ffbf35;
+	height: 6px;
+	float: left;
+}
+.circle{
+    margin-top: 60px;
+}
+div[role="progressbar"] {
+	color: #ffbf35;
+	margin-left: 100px;
+	margin-bottom: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	place-items: center;
+	display: grid;
+	--pgPercentage: var(--value);
+	background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+		conic-gradient(#ffbf35 calc(var(--pgPercentage) * 1%), #ffe6af 0);
+
+}
+
+/* services section css */
+/* .servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+} */
+
+/* Projects Section */
+#projects {
+    padding-top: 7rem;
+    background: black;
+    background-size: cover;
+}
+.card{
+    border: 2px solid black;
+}
+
+/* Contact section */
+#contact {
+    padding-top: 7rem;
+    background: black;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #ffffff;
+}
+/* footer styling */
+#footer {
+    margin-top: -2px;
+    background: rgba(0, 0, 0, 0.747);
+}
+.copy{
+    color: white;
+    font-size: 1.2rem;
+}
+.logos a i {
+    color: white !important;
+    letter-spacing: 0.8rem;
+    font-size: 2.5rem;
+}
+
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
